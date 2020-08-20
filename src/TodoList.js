@@ -9,7 +9,7 @@ export class TodoList extends React.Component {
 
 
     render(){    
-        const todo= this.props.todoList;
+        const todo= this.props.items;
         const listTodo = todo.map((todo, pos)=>(
         <li key={pos}>
             <Todo priority={todo.priority}
